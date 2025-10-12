@@ -6,13 +6,12 @@ export default function Banner() {
   return (
     <div className={styles.banner}>
       <div className={styles.apresentacao}>
-        <h1 className={styles.titulo}>Olá, Mundo!</h1>
+        <h1 className={styles.titulo}>Bem-vindo ao meu mundo React</h1>
 
         <p className={styles.paragrafo}>
-          Boas-vindas ao meu espaço pessoal!<br></br> Eu sou <strong>Lucas Vilela</strong>, desenvolvedor
-          apaixonado por tecnologia.<br></br> Aqui compartilho meus aprendizados,
-          experiências e dicas do mundo da programação.<br></br> Espero que você
-          encontre algo novo e útil por aqui!
+          Eu sou <strong>Lucas Vilela</strong>, estagiário mergulhando de cabeça
+          no React. Aqui no blog, compartilho posts práticos com meus
+          aprendizados e dicas valiosas.
         </p>
       </div>
 
@@ -20,13 +19,14 @@ export default function Banner() {
         <img
           className={styles.circuloColorido}
           src={circuloColorido}
+          alt=""
           aria-hidden={true}
         />
 
         <img
           className={styles.minhaFoto}
           src={minhaFoto}
-          alt='Foto do Antônio Evaldo sorrindo'
+          alt='Foto do Lucas Vilela'
         />
       </div>
     </div>
