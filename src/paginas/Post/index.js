@@ -16,11 +16,7 @@ export default function Post() {
 
   useEffect(() => {
     if (!tituloId) return;
-    const el = document.getElementById(tituloId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      el.focus();
-    }
+    window.scrollTo({ top: 680, left: 0 });
   }, [tituloId]);
 
   if (!post) {
