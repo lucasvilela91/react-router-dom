@@ -19,14 +19,18 @@ export default function Banner() {
         <img
           className={styles.circuloColorido}
           src={circuloColorido}
-          alt=""
+          alt=''
           aria-hidden={true}
+          loading='lazy'
+          decoding='async'
         />
 
         <img
           className={styles.minhaFoto}
           src={minhaFoto}
           alt='Foto do Lucas Vilela'
+          loading='lazy'
+          decoding='async'
         />
       </div>
     </div>

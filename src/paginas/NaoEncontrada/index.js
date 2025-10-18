@@ -22,18 +22,15 @@ export default function NaoEncontrada() {
         Tente verificar o URL ou volte para a página inicial.
       </p>
 
-      <div 
-      className={styles.botaoContainer}
-      onClick={() => navegar(-1)}
-      >
-        <BotaoPrincipal tamanho='lg'>
-          Voltar
-        </BotaoPrincipal>
+      <div className={styles.botaoContainer} onClick={() => navegar(-1)}>
+        <BotaoPrincipal tamanho='lg'>Voltar</BotaoPrincipal>
       </div>
       <img
         className={styles.imagemErro}
         src={erro404}
         alt='imagem de erro 404'
+        loading='lazy'
+        decoding='async'
       />
     </div>
   );

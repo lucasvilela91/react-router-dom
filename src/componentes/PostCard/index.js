@@ -10,6 +10,8 @@ export default function PostCard({ post }) {
           className={styles.capa}
           src={`/assets/posts/${post.id}/capa.png`}
           alt='Imagem de capa do post'
+          loading='lazy'
+          decoding='async'
         />
 
         <h2 className={styles.titulo}>{post.titulo}</h2>

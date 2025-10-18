@@ -39,7 +39,24 @@ export default function Post() {
               tituloId={tituloId}
             >
               <div className='post-markdown-container'>
-                <ReactMarkdown>{post.texto}</ReactMarkdown>
+                <ReactMarkdown
+                  components={{
+                    img: ({ node, ...props }) => {
+                      const { alt = '' } = props;
+                      return (
+                        <img
+                          {...props}
+                          alt={alt}
+                          loading='lazy'
+                          decoding='async'
+                          style={{ maxWidth: '100%' }}
+                        />
+                      );
+                    },
+                  }}
+                >
+                  {post.texto}
+                </ReactMarkdown>
               </div>
             </PostModelo>
           }
