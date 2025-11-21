@@ -5,10 +5,7 @@ import styles from './SobreMim.module.css';
 export default function SobreMim() {
   return (
     <PostModelo titulo='Sobre mim'>
-      <h3 className={styles.subtitulo}>
-        🎓 Cursando Engenharia da Computação - Bacharelado | Apaixonado por
-        programação e design
-      </h3>
+      <h3 className={styles.subtitulo}>🎓 Cursando Engenharia da Computação</h3>
 
       <img
         src={fotoSobreMim}
@@ -19,53 +16,37 @@ export default function SobreMim() {
       />
 
       <p className={styles.paragrafo}>
-        Desde criança, a tecnologia sempre me fascinou. Meu primeiro contato foi
-        com videogames, onde passei horas explorando mundos no Super Mario
-        World. Antes de mergulhar na programação, desenvolvi uma paixão pelo
-        design, explorando tipografia, teoria das cores e os princípios de
-        UX/UI. Essa experiência me permite criar interfaces que unem
-        funcionalidade e estética de forma intuitiva e envolvente.
+        Tenho interesse contínuo em desenvolvimento de software, com foco em
+        front-end e um olhar atento à experiência do usuário. Atualmente, estou
+        expandindo meus conhecimentos em back-end para me tornar um
+        desenvolvedor mais completo e versátil.
+      </p>
+      <p className={styles.paragrafo}>
+        Atuo na CI&T, uma multinacional de tecnologia reconhecida globalmente,
+        onde iniciei minha trajetória através do programa de estágio NEXT GEN IA
+        EDITION. Essa oportunidade tem sido essencial para meu crescimento
+        técnico e profissional, permitindo que eu participe de projetos
+        desafiadores e colaborativos em um ambiente de inovação constante.
+      </p>
+      <p className={styles.paragrafo}>
+        Acredito na importância de escrever código limpo, escalável e alinhado
+        às boas práticas de desenvolvimento. Estou sempre em busca de aprender
+        novas tecnologias, aprimorar minhas habilidades e contribuir com
+        soluções que façam a diferença.
       </p>
 
-      <h4 className={styles.secaoTitulo}>💻 Desenvolvedor Full-Stack</h4>
+      <h4 className={styles.secaoTitulo}>💻 Hard skills</h4>
 
       <p className={styles.paragrafo}>
-        Sou desenvolvedor full-stack, com foco principal no front-end,
-        especializado em JavaScript e estilização com CSS e Tailwind. Tenho
-        experiência com várias tecnologias e frameworks, incluindo:
+        Typescript | React.js | Next.js | Node.js | Git | PostgreSQL | MySQL |
+        MongoDB
       </p>
 
-      <ul className={styles.listaSkills}>
-        <li>
-          🔹 <strong>Front-End:</strong> Tailwind | JavaScript | TypeScript |
-          React.js
-        </li>
-        <li>
-          🔹 <strong>Back-End:</strong> Node.js
-        </li>
-        <li>
-          🔹 <strong>Mobile:</strong> Swift
-        </li>
-        <li>
-          🔹 <strong>Banco de Dados:</strong> MySQL | MongoDB
-        </li>
-        <li>
-          🔹 <strong>Versionamento:</strong> Git
-        </li>
-      </ul>
-
+      <h4 className={styles.secaoTitulo}>🎮 Além da tecnologia</h4>
       <p className={styles.paragrafo}>
-        <strong>🎯 Diferenciais:</strong> Minha formação em Educação Física me
-        ajudou a desenvolver habilidades como trabalho em equipe, empatia e
-        comunicação, fundamentais no desenvolvimento de soluções tecnológicas
-        que atendem de forma eficaz as necessidades dos usuários.
-      </p>
-
-      <p className={styles.paragrafo}>
-        <strong>🎮 Além da tecnologia:</strong> Nos momentos livres, adoro jogar
-        videogames, treinar musculação e aprender algo novo. Acredito que o
-        equilíbrio entre trabalho e hobbies é essencial para manter a
-        criatividade e o foco no dia a dia.
+        Nos momentos livres, adoro jogar videogames, treinar musculação e
+        aprender algo novo. Acredito que o equilíbrio entre trabalho e hobbies é
+        essencial para manter a criatividade e o foco no dia a dia.
       </p>
 
       <div className={styles.contato}>
@@ -84,14 +65,6 @@ export default function SobreMim() {
             lucasvilelapersonal@gmail.com
           </a>
           <br />
-          💻 <strong>GitHub:</strong>{' '}
-          <a
-            href='https://github.com/lucasvilela91'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            github.com/lucasvilela91
-          </a>
         </p>
       </div>
     </PostModelo>
